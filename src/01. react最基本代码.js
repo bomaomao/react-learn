@@ -7,13 +7,17 @@ import reactDom from 'react-dom';
 
 //  创建虚拟DOM元素后，使用ReactDOM把虚拟DOM渲染到页面上
 // 渲染 页面上的DOM结构，最好的方式就是写 HTML代码；HTML是最优秀的标记语言
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
+const  mydiv = React.createElement('div', {title : 'div my'}, '这是一个div元素')
+
+// 创建虚拟DOM元素后，使用ReactDOM把虚拟DOM渲染到页面上
+ReactDOM.render(mydiv, document.getElementById('root'))
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

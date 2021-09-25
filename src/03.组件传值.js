@@ -9,6 +9,7 @@ function Hello(props) {
 
 
 function App() {
+
   const hello = {
     name: 'hello组件',
     age: '2000'
@@ -16,13 +17,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        000
+        {/* ES6 语法 */}
         <Hello {...hello}/>
-      </header> 
     </div>
   );
 }
 
+// 把组件暴露出去
 export default App;
